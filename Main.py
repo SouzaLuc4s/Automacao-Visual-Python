@@ -7,12 +7,12 @@ pg.useImageNotFoundException(False) #Tratamento de erro de excessão
 
 #biblioteca imagens de track (prints exatos dos items a sua escolha)
 icones = {
-   'images/loot_cacth/1.png':0.7,
-   'images/loot_cacth/2.png':0.7,
-   'images/loot_cacth/5.png':0.7,
-   'images/loot_cacth/4.png':0.7,
+   'images/icone/1.png':0.7,
+   'images/icone/2.png':0.7,
+   'images/icone/5.png':0.7,
+   'images/icone/4.png':0.7,
 }
-#funação de click aleatório pós tela azul 
+#função de click aleatório pós tela de confirmação 
 def click_aleatorio():
      x =  np.random.randint(300, 1600)
      y = np.random.randint (200, 800)
