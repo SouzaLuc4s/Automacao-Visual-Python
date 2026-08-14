@@ -39,7 +39,7 @@ def tela_azul():
 
 tela_azul()
 
-#funação de interação com a imagem
+#função de interação com a imagem
 def acao():
         for imagem, segundos in icones.items():
             print("Porcurando a imagem:", imagem)
