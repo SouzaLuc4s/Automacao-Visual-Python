@@ -30,8 +30,3 @@ O projeto identifica elementos visuais específicos na tela em tempo real, mapei
 ### Pró-requisitos
 
 Certifique-se de ter o Python instalado em sua máquina.
-
-1. **Clone o repositório:**
-   ```bash
-   git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-   cd seu-repositorio
