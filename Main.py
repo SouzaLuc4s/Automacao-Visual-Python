@@ -1,4 +1,4 @@
-import pyautogui as pg #automatizção de cliques e teclas
+import pyautogui as pg #automação de cliques e teclas
 import numpy as np #randomizar numero do pixel
 
 #para o codigo
@@ -19,13 +19,13 @@ def click_aleatorio():
      pg.click(x, y)
 
 #biblioteca track tela_azul
-icon = {'images/loot_cacth/3.png':0.5}
+icon = {'images/tela_azul/3.png':0.5}
 
 #função de clique na tela azul
 def tela_azul():
         print('Procurando tela azul')
         for tela, tempo_click in icon.items():
-            posi = pg.locateCenterOnScreen(tela, confidence=0.90) #serve para comprar a imagem mostrada com a da biblioteca
+            posi = pg.locateCenterOnScreen(tela, confidence=0.90) #serve para comparar a imagem mostrada com a da biblioteca
             if posi:                                              #sendo 0.90 (90%) de proximidade minima para a ação
                 print('tela dectada')
                 pg.moveTo(posi)
@@ -52,11 +52,11 @@ def acao():
                 pg.sleep(segundos)
                 
                 return True
-#para questões de escalabilidade ao poder fazer que uma função dependa da outra para ocorrer caso necessáio
+#para questões de escalabilidade para fazer que uma função dependa da outra para ocorrer caso necessáio
         return False 
                 
 acao()
-# Looping princial da automção (aperte Ctrl + C no terminal ou
+# Looping principal da automção (aperte Ctrl + C no terminal ou
 #  arraste o mouse para o canto esquerdo da tela para encerrar)
 def bot():
     while True:
